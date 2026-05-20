@@ -93,3 +93,24 @@ a {
 	font-size: smaller;
 	margin-bottom: 0;
 }
+
+#galerija {
+	display: grid;
+
+	/* 3 images per row */
+	grid-template-columns: repeat(3, 1fr);
+
+	gap: 10px;
+}
+
+#galerija img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+#galerija {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 10px;
+}
